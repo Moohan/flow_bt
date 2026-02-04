@@ -1,0 +1,45 @@
+site_name: Flow BT
+site_description: Python client library for Flow 2 air quality monitors via Bluetooth Low Energy
+site_url: https://moohan.github.io/flow-bt/
+repo_url: https://github.com/moohan/flow-bt
+repo_name: moohan/flow-bt
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Protocol: PROTOCOL_REPORT.md
+  - Development: WALKTHROUGH.md
+  - Examples:
+      - Discovery: examples/discover_device.py
+      - Basic Stream: examples/basic_stream.py
+      - Fetch History: examples/fetch_history.py

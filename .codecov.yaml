@@ -1,0 +1,21 @@
+# Codecov configuration
+coverage:
+  status:
+    project:
+      default:
+        # target: auto  # auto will use the coverage from the base commit
+        target: 80%   # aim for 80% coverage
+        threshold: 2% # allow 2% drop before failing
+    patch:
+      default:
+        target: auto
+        threshold: 0%
+
+parsers:
+  gcov:
+    branch_detection: true
+
+comment:
+  layout: "reach,diff,flags,files"
+  behavior: default
+  require_changes: false  # if true: only post the comment if coverage changes

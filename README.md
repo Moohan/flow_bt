@@ -1,5 +1,10 @@
 # Flow BT - Flow 2 BLE Client Library
 
+[![PyPI version](https://img.shields.io/pypi/v/flow-bt.svg)](https://pypi.org/project/flow-bt/)
+[![Python versions](https://img.shields.io/pypi/pyversions/flow-bt.svg)](https://pypi.org/project/flow-bt/)
+[![codecov](https://codecov.io/gh/Moohan/flow_bt/graph/badge.svg?token=BSu3B2nzty)](https://codecov.io/gh/Moohan/flow_bt)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A Python client library for interacting with Flow 2 air quality monitors via Bluetooth Low Energy (BLE).
 
 ## Features

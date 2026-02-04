@@ -1,0 +1,21 @@
+"""Protocol constants for Flow 2 BLE communication."""
+
+# Service UUID
+SERVICE_FLOW = "30390100-4e55-4c10-9dce-b654f35fdf99"
+
+# Characteristic UUIDs
+UUID_AUTH = "30390201-4E55-4C10-9DCE-B654F35FDF99"
+UUID_COMMAND = "30390101-4E55-4C10-9DCE-B654F35FDF99"
+UUID_DATA = "30390102-4E55-4C10-9DCE-B654F35FDF99"
+UUID_BATTERY = "00002a19-0000-1000-8000-00805f9b34fb"
+
+# Authentication
+AUTH_KEY = bytes([0xa5, 0x97, 0x14, 0x69, 0x30, 0xb0, 0x13, 0x03])
+
+# Commands
+CMD_ACTIVATE = bytes([0x02])
+CMD_FETCH_HISTORY = bytes.fromhex("010500")
+
+# Packet sizes
+LIVE_DATA_PACKET_SIZE = 20
+HISTORY_DATA_PACKET_SIZE = 244  # Typical size
